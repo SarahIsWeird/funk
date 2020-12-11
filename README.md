@@ -18,5 +18,8 @@ FunkPlayer must be compiled with at least C++17. (C++20 preferred, later probabl
 Sample MinGW command:
 
 ```bash
-g++ -o funk.exe src/funk.cpp src/assets.cpp path/to/discord/sdk/*.o -I"path/to/sfml/include" -I"path/to/discord/sdk/cpp/" -L"path/to/sfml/lib" -L"path/to/discord/sdk/lib/x86" -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -ldiscord_game_sdk -mwindows -std=c++2a
+g++ -o funk.exe src/funk.cpp src/assets.cpp path/to/discord/sdk/*.o \
+  -I"path/to/sfml/include" -I"path/to/discord/sdk/cpp/" -L"path/to/sfml/lib" \
+  -L"path/to/discord/sdk/lib/x86" -lsfml-system -lsfml-window -lsfml-graphics \
+  -lsfml-audio -ldiscord_game_sdk -mwindows -std=c++2a
 ```
